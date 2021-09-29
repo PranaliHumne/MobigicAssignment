@@ -1,0 +1,54 @@
+ 
+ h1 {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif
+  }
+  
+  .library{
+    width: 28.7%;
+    margin-left: 0.003%;
+    margin-right: 0.003%;
+  }
+  .title {
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .book {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    width: 140px;
+    height: 186px;
+    background: #a21e1e  center center no-repeat;
+    background-size: cover
+  } 
+   .lbook{
+    width: 180px;
+    height: 281px;
+   }
+   
+   /* * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+} */
+  
+div {
+  display: block;
+}
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  position: relative;
+}
+  .add-book {
+    margin-bottom: 40px;
+  }
+
+  .collection {
+    margin: 0 -2%;
+}

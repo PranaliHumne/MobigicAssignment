@@ -1,0 +1,33 @@
+<h1>Register</h1>
+
+<div class="row">
+    <div class="col-md-4"></div>
+    <div class="col-md-4">
+        <div class="form">
+            <div class="form-group">
+                <label for=""> Full Name </label>
+                <input [(ngModel)]="full_name" type="text" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="">Email</label>
+                <input [(ngModel)]="email" type="email" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="">User Name</label>
+                <input [(ngModel)]="User_name" type="text" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="">Password</label>
+                <input [(ngModel)]="password" type="password" class="form-control">
+            </div>
+            <!-- <div class="form-group">
+                <label for="">Confirm Password</label>
+                <input type="password" class="form-control">
+            </div> -->
+            <div class="form-group">
+                <a  (click) = "onRegister()" style="margin-left:10px"  class="btn btn-success">Register</a> 
+                <a style = "margin-right:10px" routerLink="/user-login" class="btn btn-danger pull-right" >Cancel</a>
+            </div>
+        </div>
+    </div>
+</div>

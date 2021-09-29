@@ -1,0 +1,60 @@
+<h1>Books</h1>
+
+<div class="row">
+    <div class="col-md-4"></div>
+    <div class="col-md-4">
+        <div class="form-group" enctype = "multipart/form-data">
+            <label for="">File Title </label>
+            <input [(ngModel)]="book_name" type="text" class="form-control">
+        </div>
+        <!-- <div class="form-group">
+            <label for="">Auther Name</label>
+            <input [(ngModel)]="auther_name" type="text" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="">Category</label>
+           <select [(ngModel)]="category_id" class="form-control">
+           <option 
+           *ngFor = "let category of categories" [value]="category.category_id">{{category.category_title}}</option>
+           console.log(category_id)
+        </select>
+        </div>
+        <div class="form-group">
+            <label for="">Part</label>
+            <input [(ngModel)]="part" type="number" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="">Publish Date</label>
+            <input [(ngModel)]="publish_date" type="date" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="">Rating </label>
+            <input [(ngModel)]="rating" type="number" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="">Status</label>
+            <input [(ngModel)]="status" type="text" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="">Descripation</label>
+            <textarea input [(ngModel)]="descripation" type="text" class="form-control">
+        </textarea>
+        </div> -->
+        
+        <!-- <div class="form-group">
+            <label for="">Select Thumbnail</label>
+            <input (change)="onSelectFile($event)" type="file" class="form-control" />
+          </div> -->
+
+          <div class="form-group">
+            <label for="">Select file</label>
+            <input (change)="onSelectFile2($event)" type="file" accept="application/pdf, application/vnd.ms-excel" class="form-control"/>
+          </div>
+
+        <div class="form-group">
+            <a (click) = "onAdd()" style="margin-left:10px" routerLink = "book-list" class="btn btn-success">Add File</a>
+            <a (click) = "onCancel()" routerLink = "book-list" class="btn btn-danger pull-right">Cancel</a>
+            <button (click) = "onReset()" style="margin-left:10px;" class="btn btn-danger">Reset </button>
+        </div>
+    </div>
+</div>

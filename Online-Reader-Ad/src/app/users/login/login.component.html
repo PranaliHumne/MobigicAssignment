@@ -1,0 +1,31 @@
+
+
+<div class="row">
+    <div class="col-md-4"></div>
+    <div class="col-md-4 home">
+        <div class="form-group">
+                
+            <label class="form-label">UserName</label>
+            <input [(ngModel)]="User_name" type="text" class="form-control">
+        </div>
+        <div class="form-group">
+            <label class="form-label" for="">Password</label>
+            <input [(ngModel)]="password" type="password" class="form-control">
+        </div>
+        <div class="form-group">
+            <div class="checkbox">
+                <label>
+                  <input [(ngModel)]="rememberme" type="checkbox"> Remember me ?
+                </label>
+              </div>
+        </div>
+
+        <div class="form-group">
+            <a (click) = "onLogin()"  class="btn btn-success pull-left ">login</a>
+            <a  class="btn btn-danger pull-right">Cancel</a>
+            <a style = "margin: 10px;" routerLink = "/user-register">Register</a>
+        </div>
+        
+    </div>
+</div>
+

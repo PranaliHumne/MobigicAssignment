@@ -1,0 +1,21 @@
+
+
+<div class="container">
+    <header>
+        <h1>File List</h1>
+    </header>
+</div>
+
+<div class="container">
+    <button (click) = "onAddBook" style = "margin-bottom:10px" routerLink ="/book-add" class="btn btn-success pull-right add-book">Add Files</button>
+</div>
+<div class="collection">
+            <div class="col-md-2 library.lbook" *ngFor="let book of books">
+                <div class="stroy">
+                     <div class="title"><h3>{{book.book_name}}</h3></div>
+                     <div>
+                         <a (click) = "onDelete(book.book_id)" style = "margin:10px "  routerLink = "/book-list" class="btn btn-danger"><i class="glyphicon glyphicon-trash"></i></a></div>
+                </div>
+            </div>
+</div>
+
